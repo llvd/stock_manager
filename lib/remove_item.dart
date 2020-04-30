@@ -51,7 +51,7 @@ class _RemoveItemPageState extends State<RemoveItemPage> {
            children: <Widget>[
              SizedBox(height: 30),
               Center(
-                child: Text("List Items", style: TextStyle(
+                child: Text("Manage Items", style: TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.w600,
                   fontSize: 22
