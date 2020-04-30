@@ -36,18 +36,18 @@ class DbProvider {
       },
       version: 1
     );
-    await drv.execute("DROP TABLE IF EXISTS items");
-    await drv.execute(
-    '''
-    create table items (
-      _id integer primary key autoincrement,
-      name text not null,
-      date text not null,
-      code text not null,
-      stock integer not null 
-    )
-    '''
-    );
+    // await drv.execute("DROP TABLE IF EXISTS items");
+    // await drv.execute(
+    // '''
+    // create table items (
+    //   _id integer primary key autoincrement,
+    //   name text not null,
+    //   date text not null,
+    //   code text not null,
+    //   stock integer not null 
+    // )
+    // '''
+    // );
     return drv;
   }
 

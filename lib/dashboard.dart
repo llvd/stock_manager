@@ -79,11 +79,16 @@ class _DashboardState extends State<Dashboard> {
                   children: <Widget>[
                   Row(
                     children: <Widget>[
+                      Image(
+                        image: AssetImage('assets/img_placeholder.png'),
+                      ),
+                      SizedBox(width: 20,),
                       Container(
                         padding: EdgeInsets.only(bottom: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
+                            SizedBox(height: 20),
                             Text("${_filteredItems[index].name}", style: TextStyle(
                               fontWeight: FontWeight.w600
                             ),),
