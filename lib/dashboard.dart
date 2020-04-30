@@ -24,7 +24,7 @@ class _DashboardState extends State<Dashboard> {
     }
     List<Item> tempStore = new List<Item>();
     items.forEach((element) {
-      if (element.name.toLowerCase().contains(q)) {
+      if (element.name.toLowerCase().contains(q.toLowerCase())) {
         tempStore.add(element);
       }  
     });
